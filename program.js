@@ -14,3 +14,4 @@ process.stdin.on('readable', function() {
         default: process.stderr.write('Wrong instruction!');
     }
  });
+ 
