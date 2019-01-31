@@ -1,6 +1,6 @@
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
-    let input = process.stdin.read().toString().trim();
+    const input = process.stdin.read().toString().trim();
         
     switch (input) {
         case 'os':  process.stdout.write(process.env.os);
