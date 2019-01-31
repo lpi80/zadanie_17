@@ -1,11 +1,11 @@
-let os = require('os');
-let time = require('../modules/timeConvert');
+const os = require('os');
+const time = require('../modules/timeConvert');
 
 function getOSinfo() {
     let type = os.type();
-    if(type === 'Darwin') {
+    if (type === 'Darwin') {
         type = 'OSX';
-    } else if(type === 'Windows_NT') {
+    } else if (type === 'Windows_NT') {
         type = 'Windows';
     }
     const release = os.release();
